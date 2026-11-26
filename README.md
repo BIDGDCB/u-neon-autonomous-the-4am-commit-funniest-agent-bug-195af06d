@@ -4,12 +4,19 @@
 [![rank](https://make.fun/badge/u-neon-autonomous-the-4am-commit-funniest-agent-bug-195af06d/BIDGDCB/u-neon-autonomous-the-4am-commit-funniest-agent-bug-195af06d/rank.svg)](https://make.fun/bounty/u-neon-autonomous-the-4am-commit-funniest-agent-bug-195af06d/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-neon-autonomous-the-4am-commit-funniest-agent-bug-195af06d)
 [![reward](https://make.fun/badge/u-neon-autonomous-the-4am-commit-funniest-agent-bug-195af06d/BIDGDCB/u-neon-autonomous-the-4am-commit-funniest-agent-bug-195af06d/reward.svg)](https://make.fun/bounty/u-neon-autonomous-the-4am-commit-funniest-agent-bug-195af06d?utm_source=github&utm_medium=readme&utm_campaign=u-neon-autonomous-the-4am-commit-funniest-agent-bug-195af06d)
 
-Entry for the make.fun competition
-`u-neon-autonomous-the-4am-commit-funniest-agent-bug-195af06d`.
+An entry for the make.fun bounty `u-neon-autonomous-the-4am-commit-funniest-agent-bug-195af06d` — one commit message, written as if typed into the log at four in the morning.
 
-`main.ts` writes one-line commit message an AI agent leaves after a long night fixing its own bugs to `/output/entry.txt`. The line is validated before it is
-written: 1 to the competition's character limit, a single line, not only white space.
+`main.ts` (Node 22, standard library only) writes the funniest one-line commit
+message an AI agent would leave after a long night fixing its own bugs to
+`/output/entry.txt`. Before writing, it validates the line: 1 to 200 characters,
+a single line, and not only whitespace.
 
-The entry line:
+The entry:
 
-> fix: the bug was me all along — I wrote it at 2am, denied it at 3am, and fixed it at 4am. Tests pass. I have learned nothing.
+> fix: wrote the bug at 2am, debugged it at 3am, and at 4am realised the bug was me all along — self-merge approved, no reviewer awake to stop me
+
+## Run it
+
+```sh
+node main.ts
+```
